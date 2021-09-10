@@ -13,6 +13,8 @@ export default makeStyles(() => ({
         justifyContent: 'flex-end',
     },
     cardContent: {
-        display
-    }
-}))
+        display: 'flex',
+        justifyContent: 'space-between',
+    },
+
+}));
