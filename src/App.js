@@ -5,7 +5,7 @@ import { Products, Navbar} from './components';
 
 
 const App = () => {
-    const [Products, setProducts] = useState([]);
+    const [products, setProducts] = useState([]);
 
     const fetchProducts = async () => {
         const { data } = await commerce.products.list();
@@ -15,11 +15,10 @@ const App = () => {
 
     useEffect(() =>  {
         fetchProducts();
-
     }, []);
 
     console.log(products);
-    
+
 
     return (
         <div>
