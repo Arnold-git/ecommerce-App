@@ -1,12 +1,12 @@
 import React from 'react';
 import Products from './components/Products/Products';
 
-const App = () => {
+const Product = () => {
     return (
         <div>
-            E-commerce
+            <Products />
         </div>
     )
 }
 
-export default App
+export default Product
