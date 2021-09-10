@@ -1,12 +1,11 @@
-import React from 'react';
-
-
-// import Products from './components/Products/Products';
-// import Navbar from './components/Navbar/Navbar';
-
+import React, { useState, useEffect } from 'react';
+import { commerce } from './lib/commerce';
 import { Products, Navbar} from './components';
 
-const Product = () => {
+
+
+const App = () => {
+    const [Products, setProducts] = useState([]);
     return (
         <div>
             <Navbar />
@@ -15,4 +14,4 @@ const Product = () => {
     )
 }
 
-export default Product
+export default App
