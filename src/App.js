@@ -9,6 +9,7 @@ import { Products, Navbar} from './components';
 const Product = () => {
     return (
         <div>
+            <Navbar />
             <Products />
         </div>
     )
