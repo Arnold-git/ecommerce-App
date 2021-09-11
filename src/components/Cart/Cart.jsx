@@ -1,12 +1,13 @@
 import React from 'react'
 import { Container, Typography, Button, Grid } from '@material-ui/core'
-import { CallMissedSharp } from '@material-ui/icons'
-
-import useStyles from './styles';
 
 
-export const Cart = ({ cart }) => {
+import useStyles from './Styles';
+
+
+const Cart = ({ cart }) => {
     const isEmpty = !cart.line_items.length;
+    const classes = useStyles();
 
     const EmptyCart = () => (
         <Typography variant="subtitle1">You have no item in your cart, start shopping!</Typography>
@@ -45,3 +46,5 @@ export const Cart = ({ cart }) => {
         </Container>
     )
 }
+
+export default Cart
