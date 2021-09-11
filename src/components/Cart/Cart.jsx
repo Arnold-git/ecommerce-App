@@ -6,7 +6,6 @@ import useStyles from './Styles';
 
 
 const Cart = ({ cart }) => {
-    const isEmpty = !cart.line_items.length;
     const classes = useStyles();
 
     const EmptyCart = () => (
@@ -35,14 +34,16 @@ const Cart = ({ cart }) => {
         
         </>
 
-    )
+    );
+
+    if(!cart.line_items) return 'Loading... ';
         
 
     return (
         <Container>
             <div className={classes.toolbar}/>
             <Typography className={classes.title} variant="h3">Your Shopping Cart</Typography>
-            { isEmpty ? <EmptyCart/> : < FilledCart/>}
+            { !cart.line_items.length ? <EmptyCart/> : < FilledCart/>}
         </Container>
     )
 }
