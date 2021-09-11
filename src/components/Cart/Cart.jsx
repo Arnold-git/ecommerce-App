@@ -2,6 +2,9 @@ import React from 'react'
 import { Container, Typography, Button, Grid } from '@material-ui/core'
 import { CallMissedSharp } from '@material-ui/icons'
 
+import useStyles from './styles';
+
+
 export const Cart = ({ cart }) => {
     const isEmpty = !cart.line_items.length;
 
