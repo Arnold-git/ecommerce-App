@@ -10,6 +10,12 @@ export const Cart = () => {
     );
 
     const FilledCart = () => (
+        <>
+            <Grid container spacing={3}>
+
+            </Grid>
+        
+        </>
 
     )
         
